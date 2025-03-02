@@ -1,18 +1,18 @@
 {
   "navigation": {
-    "welcome": "Welcome to Garden Community",
+    "welcome": "Welcome to Our House Yard",
     "plants": "Different Plant Types",
     "plantsDescription": "Explore various plant species suitable for your garden",
     "soil": "Soil Preparation",
-    "soilDescription": "Learn about soil types and preparation techniques",
-    "fertilizer": "Fertilizer and Composting",
-    "fertilizerDescription": "Create natural fertilizers and compost",
+    "soilDescription": "Learn about proper soil preparation techniques",
+    "fertilizer": "Fertilizer & Composting",
+    "fertilizerDescription": "Make your own natural fertilizers and compost",
     "kitchen": "Kitchen Waste Utilization",
     "kitchenDescription": "Turn kitchen waste into valuable garden resources",
     "seedlings": "Seedling Care",
-    "seedlingsDescription": "Master the art of growing healthy seedlings",
+    "seedlingsDescription": "Learn how to care for young plants",
     "community": "Community",
-    "communityDescription": "Connect with fellow gardeners and share experiences"
+    "communityDescription": "Connect with other garden enthusiasts"
   },
   "common": {
     "uploadPDF": "Upload PDF",

@@ -1,8 +1,3 @@
-'use client';
-
-import React from 'react';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import {
   GlobeAsiaAustraliaIcon,
   BeakerIcon,
@@ -11,6 +6,8 @@ import {
   ArrowPathIcon,
   UserGroupIcon
 } from '@heroicons/react/24/outline';
+import { getTranslations } from 'next-intl/server';
+import Link from 'next/link';
 
 const sections = [
   { id: 'plants', icon: GlobeAsiaAustraliaIcon },
@@ -21,8 +18,8 @@ const sections = [
   { id: 'community', icon: UserGroupIcon },
 ];
 
-export default function Home() {
-  const t = useTranslations('navigation');
+export default async function Home() {
+  const t = await getTranslations('navigation');
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
