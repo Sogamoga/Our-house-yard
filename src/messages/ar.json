@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "welcome": "مرحباً بكم في مجتمع الحديقة",
+    "plants": "أنواع نباتات مختلفة",
+    "plantsDescription": "اكتشف أنواع النباتات المناسبة لحديقتك",
+    "soil": "تحضير التربة",
+    "soilDescription": "تعرف على أنواع التربة وتقنيات تحضيرها",
+    "fertilizer": "التسميد وصناعة السماد",
+    "fertilizerDescription": "صنع الأسمدة الطبيعية والسماد العضوي",
+    "kitchen": "كيفية الاستفادة من بقايا المطبخ",
+    "kitchenDescription": "حول مخلفات المطبخ إلى موارد قيمة للحديقة",
+    "seedlings": "العناية بالشتول",
+    "seedlingsDescription": "أتقن فن زراعة شتلات صحية",
+    "community": "المجتمع",
+    "communityDescription": "تواصل مع البستانيين وشارك تجاربك"
+  },
+  "common": {
+    "uploadPDF": "رفع ملف PDF",
+    "download": "تحميل",
+    "share": "مشاركة",
+    "search": "بحث",
+    "learnMore": "اعرف المزيد"
+  }
+} 

@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "welcome": "Welcome to Garden Community",
+    "plants": "Different Plant Types",
+    "plantsDescription": "Explore various plant species suitable for your garden",
+    "soil": "Soil Preparation",
+    "soilDescription": "Learn about soil types and preparation techniques",
+    "fertilizer": "Fertilizer and Composting",
+    "fertilizerDescription": "Create natural fertilizers and compost",
+    "kitchen": "Kitchen Waste Utilization",
+    "kitchenDescription": "Turn kitchen waste into valuable garden resources",
+    "seedlings": "Seedling Care",
+    "seedlingsDescription": "Master the art of growing healthy seedlings",
+    "community": "Community",
+    "communityDescription": "Connect with fellow gardeners and share experiences"
+  },
+  "common": {
+    "uploadPDF": "Upload PDF",
+    "download": "Download",
+    "share": "Share",
+    "search": "Search",
+    "learnMore": "Learn More"
+  }
+} 
