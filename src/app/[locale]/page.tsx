@@ -7,6 +7,7 @@ import {
   UserGroupIcon
 } from '@heroicons/react/24/outline';
 import { getTranslations } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 
 const sections = [
@@ -18,7 +19,12 @@ const sections = [
   { id: 'community', icon: UserGroupIcon },
 ];
 
-export default async function Home() {
+type Props = {
+  params: { locale: string }
+};
+
+export default async function Home({ params: { locale } }: Props) {
+  setRequestLocale(locale);
   const t = await getTranslations('navigation');
 
   return (
@@ -33,7 +39,7 @@ export default async function Home() {
             return (
               <Link
                 key={section.id}
-                href={`/${section.id}`}
+                href={`/${locale}/${section.id}`}
                 className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600/10 to-green-800/10 dark:from-green-600/20 dark:to-green-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
