@@ -1,32 +1,35 @@
-import React from 'react';
-import { NextIntlClientProvider } from 'next-intl';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import '../globals.css';
 import { notFound } from 'next/navigation';
-import { locales } from '@/i18n/config';
+import { locales, getLocaleDirection } from '@/i18n/config';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Our House Yard',
+  description: 'A community for garden enthusiasts',
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({ children, params: { locale } }: {
+export default function RootLayout({
+  children,
+  params: { locale }
+}: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  let messages;
-  try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
-    notFound();
-  }
+  if (!locales.includes(locale as any)) notFound();
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="h-full">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body className="h-full bg-white dark:bg-gray-900">
-        <NextIntlClientProvider locale={locale} messages={messages}>
+    <html lang={locale} dir={getLocaleDirection(locale as any)}>
+      <body className={inter.className}>
+        <main className="min-h-screen bg-white dark:bg-gray-900">
           {children}
-        </NextIntlClientProvider>
+        </main>
       </body>
     </html>
   );
